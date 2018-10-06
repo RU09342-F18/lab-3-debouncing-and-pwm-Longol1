@@ -20,9 +20,9 @@ int main(void)
         P2IFG &= ~BIT1;     // Clear interrupt flag
 
         //Output Setup
-        P1DIR |= BIT0;      // Sets the P1.0 LED as an output
-        P1SEL |= BIT0;      // Enables the output of a timer to be used
-                            // directly to trigger the LED
+        P1DIR |= BIT2;      // Sets the P1.2 LED as an output
+        P1SEL |= BIT2;      // Enables the output of a timer to be 
+                            // outputted to this pin
 
         //Timer Setup
         TA0CTL = TASSEL_2 + MC_1 + TACLR;      // SMCLK, UP Mode, clear clock
